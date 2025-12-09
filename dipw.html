@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ahmu-CCA</title>
+</head>
+<body>
+  <header class="hero">
+    
+    <marqueje behavior="scrolls"  direction="left" ><h1>WELCOME TO Awolia College CCA-<br> Arabic language and Litrature ONLINE PORTAL</h1>
+</marquee> 
+<a href="index.html">
+        <button class="btn-primary">Back to Home</button>
+      </a>
+    <p>Empowering Education, Inspiring Futures</p>
+  </header>
+
+  <section  class="section">
+    <div class="container">
+      <a href="https://script.google.com/macros/s/AKfycbwb5d2JoUA6U3RX7_fR59eHQpja0155-F3BwV1hT6QV/dev">
+        <button class="btn-primary">Level-I</button>
+      </a>
+      <a href="https://script.google.com/macros/s/AKfycbwb5d2JoUA6U3RX7_fR59eHQpja0155-F3BwV1hT6QV/dev">
+        <button class="btn-primary">Level-II</button>
+      </a>
+      <a href="https://script.google.com/macros/s/AKfycbwb5d2JoUA6U3RX7_fR59eHQpja0155-F3BwV1hT6QV/dev">
+        <button class="btn-primary">Level-III</button>
+      </a>
+      
+   
+    </div>
+    <p class="info-text"><b>Access your Class Room Assessments (quizzes, project work, classwork, mid-exam, final-exam and Total(Sum) from 100%)</b>.</p>
+  </section>
+
+  <main>
+    <!-- Main content can go here if needed -->
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>© 2024 Ahmu CCA | Designed for Excellence</p>
+        <p style="font-family: 'Courier New', Courier, monospace;">Phone No.: +251 917 57 89 43</p>  
+    </div>
+  </footer>
+
+  <div class="clock">
+    <div class="time" id="time"></div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+      const period = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12 || 12;
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+      const timeString = `${hours}<span class="colon">:</span>${minutes}<span class="colon">:</span>${seconds} ${period}`;
+      document.getElementById("time").innerHTML = timeString;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
